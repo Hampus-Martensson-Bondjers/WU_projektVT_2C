@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background: red;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px, 500px, 500px, 500px, 80px;
+    grid-template-areas: 
+    "aa he he na"
+    "s1 s1 s1 s1"
+    "s2 s2 s2 s2"
+    "s3 s3 s3 s3"
+    "fo fo fo fo"
+    ;
+}
+
+.he{
+    height: auto;
+    grid-area: he;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.he img{
+    height: auto;
+    width: 150px;
+}
+
+nav{
+    grid-area: na;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-family: sans-serif;
+    background-color: red;
+    border: black solid;
+}
+
+.navlinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    right: 0px;
+    position: absolute;
+    height: 90vh;
+    top: -90vh;
+    width: 25vw;
+    background-color: red;
+    transition: all 1.5s;
+    border-bottom: solid black;
+    border-left: solid black;
+    border-right: black solid;
+}
+
+.navActive{
+    transform: translateY(100vh);
+}
+
+.navlinks li{
+    list-style: none;
+}
+
+.navlinks a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navlinks a:hover{
+    color: gold;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 1s;
+}
+
+.burger{
+    cursor: pointer;
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.s1{
+    grid-area: s1;
+}
+
+.s2{
+    grid-area: s2;
+}
+
+.s3{
+    grid-area: s3;
+}
