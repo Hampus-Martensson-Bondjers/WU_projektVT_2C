@@ -14,7 +14,7 @@ body{
     height: 1680px;
     width: 100%;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 100px 500px 500px 500px 80px;
+    grid-template-rows: 100px 500px 500px 500px 200px;
     grid-template-areas: 
     "aa he he na"
     "s1 s1 s1 s1"
@@ -27,7 +27,6 @@ body{
 .aa{
     grid-area: aa;
     border: solid black;
-    margin-bottom: 18px;
 }
 
 .aa a{
@@ -62,7 +61,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 100px;
     font-family: sans-serif;
     background-color: red;
     border: black solid;
@@ -144,11 +143,23 @@ nav{
 .s3{
     grid-area: s3;
     height: 500px;
+    background-color: white;
 }
 
 .fo{
     grid-area: fo;
     height: 80px;
+    margin: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fo h1{
+    font-size: medium;
+}
+
+.fo p{
+    font-size: x-small;
 }
 
 @media screen and (min-width: 479px){
@@ -195,5 +206,51 @@ nav{
         position: absolute;
         border: none;
         transition: none;
+    }
+
+    .fo h1{
+        font-size: large;
+    }
+
+    .fo p{
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .wrapper{
+        display: grid;
+        height: 1380px;
+        width: 100vw;
+        grid-template-rows: 150px 80px 500px 500px 150px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "he he"
+        "na na"
+        "s1 s1"
+        "s2 s3"
+        "fo fo"
+        ;
+    }
+
+    .he img{
+        height: auto;
+        width: 200px;
+    }
+   
+    .navlinks a{
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .fo h1{
+        font-size: x-large;
+    }
+
+    .fo p{
+        font-size: medium;
     }
 }
