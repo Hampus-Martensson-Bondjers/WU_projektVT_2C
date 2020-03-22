@@ -131,19 +131,61 @@ nav{
 
 .s1{
     grid-area: s1;
+    margin: 3px;
+    padding: 4px;
     height: 500px;
-    background-color: white;
+    background-color: darkred;
 }
+
+.s1 h1{
+    color: lightgray;
+}
+
+.s1 p{
+    color: lightgray;
+}
+
 
 .s2{
     grid-area: s2;
+    margin: 3px;
+    padding: 4px;
     height: 500px;
+    background-color: darkred;
+}
+
+.s2 h1{
+    color: lightgray;
+}
+
+.s2 p{
+    color: lightgray;
 }
 
 .s3{
     grid-area: s3;
+    margin: 3px;
+    padding: 4px;
     height: 500px;
-    background-color: white;
+    background-color: darkred;
+}
+
+.s3 h1{
+    color: lightgray;
+}
+
+.s3 p{
+    color: lightgray;
+}
+
+.s3 h2{
+    color: lightgray;
+}
+
+.s3 img{
+    width: 361px;
+    height: auto;
+    
 }
 
 .fo{
